@@ -518,13 +518,18 @@ body::before {
 }
 
 .overview-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  display: flex;
   gap: 2.5rem;
-  align-items: start;
+  align-items: flex-start;
+}
+
+.overview-content {
+  flex: 2;
 }
 
 .overview-stats {
+  flex: 1;
+  min-width: 260px;
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
@@ -572,33 +577,67 @@ body::before {
 .stat-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1rem;
+  gap: 0.6rem;
 }
 
 .stat-card {
   background: #ffffff;
   border-radius: var(--border-radius);
-  padding: 1.25rem;
+  padding: 0.65rem 0.75rem;
+  min-height: 92px;
   box-shadow: var(--shadow-sm);
   border: 1px solid var(--border-color);
+  text-align: center;
+  position: relative;
 }
 
 .stat-value {
   font-family: var(--font-display);
-  font-size: 2rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: var(--primary-color);
 }
 
 .stat-label {
   color: var(--text-light);
-  font-size: 0.9rem;
+  font-size: 0.72rem;
+  text-align: center;
 }
 
-.stat-note {
-  margin-top: 1rem;
-  color: var(--text-secondary);
-  font-size: 0.95rem;
+.stat-tooltip {
+  position: absolute;
+  left: 50%;
+  top: calc(100% + 10px);
+  transform: translateX(-50%) translateY(-8px);
+  background: #0f1b2d;
+  color: #f8fbff;
+  padding: 0.5rem 0.75rem;
+  border-radius: 10px;
+  font-size: 0.7rem;
+  width: max-content;
+  max-width: 220px;
+  opacity: 0;
+  pointer-events: none;
+  transition: var(--transition);
+  box-shadow: var(--shadow-md);
+  text-align: center;
+  z-index: 5;
+}
+
+.stat-tooltip::after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 0 6px 6px;
+  border-style: solid;
+  border-color: transparent transparent #0f1b2d;
+}
+
+.stat-card:hover .stat-tooltip {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
 }
 
 .announcement-section .announcement-card {
@@ -1127,10 +1166,6 @@ code {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .overview-grid {
-    grid-template-columns: 1fr;
-  }
-
   .focus-grid {
     grid-template-columns: 1fr;
   }
@@ -1146,6 +1181,12 @@ code {
   .cta-card {
     flex-direction: column;
     align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .overview-grid {
+    flex-direction: column;
   }
 }
 
