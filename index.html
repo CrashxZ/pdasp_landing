@@ -1,225 +1,70 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Primary Meta Tags -->
-  <meta name="title" content="Privacy-Preserving Data Sharing in Practice (PDaSP)">
-  <meta name="description" content="Advancing privacy-enhancing technologies and their use to solve real-world problems through practical, deployable approaches to data sharing and analysis.">
-  <meta name="keywords" content="privacy-preserving data sharing, secure computation, privacy-enhancing technologies, federated learning, differential privacy, data collaboration, NSF">
-  <meta name="author" content="Privacy-Preserving Data Sharing in Practice (PDaSP)">
+  <title>PDaSP Track 2 | Holistic Privacy Preserving Collaborative Data Sharing System for Intelligent Transportation</title>
+  <meta name="title" content="PDaSP Track 2 | Holistic Privacy Preserving Collaborative Data Sharing System for Intelligent Transportation">
+  <meta name="description" content="NSF/FHWA PDaSP Track 2 project developing privacy-preserving data sharing, analytics, and cyberinfrastructure for next-generation Intelligent Transportation Systems (ITS).">
+  <meta name="keywords" content="PDaSP Track 2, privacy-preserving data sharing, Intelligent Transportation Systems, differential privacy, federated learning, secure computation, FHWA, NSF">
+  <meta name="author" content="PDaSP Track 2 Team">
   <meta name="robots" content="index, follow">
-  <meta name="language" content="English">
 
-  <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Privacy-Preserving Data Sharing in Practice (PDaSP)">
-  <meta property="og:title" content="Privacy-Preserving Data Sharing in Practice (PDaSP)">
-  <meta property="og:description" content="Advancing privacy-enhancing technologies and their use to solve real-world problems through practical, deployable approaches to data sharing and analysis.">
-  <meta property="og:url" content="https://pdasp.net/">
-  <meta property="og:image" content="static/images/pdasp-banner.jpg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Privacy-Preserving Data Sharing in Practice banner">
+  <meta property="og:title" content="PDaSP Track 2 | Holistic Privacy Preserving Collaborative Data Sharing System for Intelligent Transportation">
+  <meta property="og:description" content="Holistic, privacy-preserving data sharing and analytics for next-generation Intelligent Transportation Systems.">
+  <meta property="og:image" content="static/images/overview.png">
 
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Privacy-Preserving Data Sharing in Practice (PDaSP)">
-  <meta name="twitter:description" content="Advancing privacy-enhancing technologies and their use to solve real-world problems through practical, deployable approaches to data sharing and analysis.">
-  <meta name="twitter:image" content="static/images/pdasp-banner.jpg">
-  <meta name="twitter:image:alt" content="Privacy-Preserving Data Sharing in Practice banner">
+  <meta name="twitter:title" content="PDaSP Track 2 | Holistic Privacy Preserving Collaborative Data Sharing System for Intelligent Transportation">
+  <meta name="twitter:description" content="Holistic, privacy-preserving data sharing and analytics for next-generation Intelligent Transportation Systems.">
+  <meta name="twitter:image" content="static/images/overview.png">
 
-  <!-- Additional SEO -->
-  <meta name="theme-color" content="#0b1f3a">
-  <meta name="msapplication-TileColor" content="#0b1f3a">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
 
-  <!-- Preconnect for performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://ajax.googleapis.com">
-  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
 
-  <title>PDaSP | Privacy-Preserving Data Sharing in Practice</title>
-
-  <!-- Favicon and App Icons -->
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link rel="apple-touch-icon" href="static/images/favicon.ico">
-
-  <!-- Critical CSS - Load synchronously -->
   <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
   <link rel="stylesheet" href="static/css/index.css">
 
-  <!-- Non-critical CSS - Load asynchronously -->
-  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-
-  <!-- Fallback for browsers that don't support preload -->
-  <noscript>
-    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  </noscript>
-
-  <!-- Fonts - Optimized loading -->
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
-
-  <!-- Defer non-critical JavaScript -->
-  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script defer src="static/js/bulma-carousel.min.js"></script>
-  <script defer src="static/js/bulma-slider.min.js"></script>
   <script defer src="static/js/index.js"></script>
-
-  <!-- Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Program",
-    "name": "Privacy-Preserving Data Sharing in Practice (PDaSP)",
-    "description": "Advancing privacy-enhancing technologies and their use to solve real-world problems through practical, deployable approaches to data sharing and analysis.",
-    "url": "https://pdasp.net/",
-    "provider": {
-      "@type": "Organization",
-      "name": "Information Sciences Institute"
-    },
-    "sponsor": [
-      { "@type": "Organization", "name": "National Science Foundation" },
-      { "@type": "Organization", "name": "U.S. Department of Transportation" },
-      { "@type": "Organization", "name": "Intel" },
-      { "@type": "Organization", "name": "National Institute of Standards and Technology" },
-      { "@type": "Organization", "name": "Broadcom Inc." }
-    ],
-    "areaServed": "United States",
-    "keywords": [
-      "privacy-preserving data sharing",
-      "privacy-enhancing technologies",
-      "secure computation",
-      "federated learning",
-      "differential privacy"
-    ]
-  }
-  </script>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Privacy-Preserving Data Sharing in Practice (PDaSP)",
-    "url": "https://pdasp.net/",
-    "logo": "static/images/pdasp-logo.png",
-    "parentOrganization": {
-      "@type": "Organization",
-      "name": "Information Sciences Institute"
-    }
-  }
-  </script>
 </head>
 <body>
-
-  <!-- Scroll to Top Button -->
-  <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
-    <i class="fas fa-chevron-up"></i>
+  <button class="scroll-to-top" onclick="scrollToTop()" aria-label="Scroll to top">
+    <i class="fas fa-arrow-up"></i>
   </button>
 
-  <!-- Program Links Dropdown -->
-  <div class="more-works-container">
-    <button class="more-works-btn" onclick="toggleMoreWorks()" title="Program links">
-      <i class="fas fa-link"></i>
-      Program Links
-      <i class="fas fa-chevron-down dropdown-arrow"></i>
-    </button>
-    <div class="more-works-dropdown" id="moreWorksDropdown">
-      <div class="dropdown-header">
-        <h4>Program Links</h4>
-        <button class="close-btn" onclick="toggleMoreWorks()">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      <div class="works-list">
-        <a href="https://pdasp.net/" class="work-item" target="_blank" rel="noopener">
-          <div class="work-info">
-            <h5>Official PDaSP Site</h5>
-            <p>Program overview and updates.</p>
-            <span class="work-venue">pdasp.net</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <a href="https://pdasp.net/projects/" class="work-item" target="_blank" rel="noopener">
-          <div class="work-info">
-            <h5>Projects</h5>
-            <p>Track-based project portfolio.</p>
-            <span class="work-venue">Program awards</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <a href="https://www.nsf.gov/tip/updates/nsf-invests-over-10m-advance-us-leadership-privacy-enhancing" class="work-item" target="_blank" rel="noopener">
-          <div class="work-info">
-            <h5>NSF Announcement</h5>
-            <p>NSF invests over $10M in privacy-enhancing technologies.</p>
-            <span class="work-venue">National Science Foundation</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <a href="https://drive.google.com/drive/folders/1LTrapPCJs9iQRBbmBKKRq04I-1N4uqJJ?usp=drive_link" class="work-item" target="_blank" rel="noopener">
-          <div class="work-info">
-            <h5>Participant Portal</h5>
-            <p>Shared program resources and materials.</p>
-            <span class="work-venue">Google Drive</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <main id="main-content">
-    <section class="hero program-hero">
+  <main>
+    <section class="hero track-hero">
       <div class="hero-body">
-        <div class="container is-max-desktop">
+        <div class="container is-widescreen">
           <div class="columns is-vcentered">
-            <div class="column is-7">
-              <p class="hero-eyebrow reveal">NSF-funded program</p>
-              <h1 class="title is-1 publication-title reveal delay-1">Privacy-Preserving Data Sharing in Practice (PDaSP)</h1>
-              <p class="hero-subtitle reveal delay-2">
-                Advancing privacy-enhancing technologies and their use to solve real-world problems. Aligned with a recent executive order on AI, the PDaSP program supports practical approaches for privately sharing and analyzing data across a range of use cases and application domains, emphasizing deployment, collaboration, and impact.
-              </p>
-              <div class="hero-actions reveal delay-3">
-                <a href="https://drive.google.com/drive/folders/1LTrapPCJs9iQRBbmBKKRq04I-1N4uqJJ?usp=drive_link" target="_blank" rel="noopener" class="button is-normal is-rounded is-dark">
-                  <span class="icon"><i class="fas fa-folder-open"></i></span>
-                  <span>Participant Portal</span>
-                </a>
-                <a href="https://www.nsf.gov/tip/updates/nsf-invests-over-10m-advance-us-leadership-privacy-enhancing" target="_blank" rel="noopener" class="button is-normal is-rounded is-outline">
-                  <span class="icon"><i class="fas fa-bullhorn"></i></span>
-                  <span>NSF Announcement</span>
-                </a>
-                <a href="#projects" class="button is-normal is-rounded is-outline">
-                  <span class="icon"><i class="fas fa-layer-group"></i></span>
-                  <span>Projects</span>
-                </a>
+            <div class="column is-6">
+              <div class="hero-badges">
+                <span class="badge">NSF/FHWA PDaSP</span>
+                <span class="badge badge-outline">Track 2</span>
               </div>
-              <div class="hero-meta reveal delay-4">
-                <span class="program-pill">Deployment</span>
-                <span class="program-pill">Collaboration</span>
-                <span class="program-pill">Impact</span>
-                <span class="program-pill">Privacy-enhancing tech</span>
+              <h1 class="hero-title">A Holistic Privacy Preserving Collaborative Data Sharing System for Intelligent Transportation</h1>
+              <p class="hero-subtitle">
+                This multi-institution NSF-funded project develops privacy-preserving data sharing, analytics, and cyberinfrastructure for next-generation Intelligent Transportation Systems (ITS). The effort integrates expertise across privacy, transportation systems, cyber-physical systems, and education to enable responsible, scalable, and deployable use of sensitive transportation data.
+              </p>
+              <div class="hero-actions">
+                <a class="button is-dark is-rounded" href="#overview">Project overview</a>
+                <a class="button is-light is-rounded" href="#research">Research areas</a>
+                <a class="button is-light is-rounded" href="https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2452750" target="_blank" rel="noopener">NSF Award 2452750</a>
               </div>
             </div>
-            <div class="column is-5 reveal delay-2">
-              <div class="hero-panel">
-                <img src="static/images/pdasp-banner.jpg" alt="PDaSP program banner">
-                <div class="panel-content">
-                  <h3>Program highlights</h3>
-                  <ul>
-                    <li><i class="fas fa-check-circle"></i> $10.4M NSF investment supporting inaugural awards</li>
-                    <li><i class="fas fa-check-circle"></i> 10 multidisciplinary teams across application domains</li>
-                    <li><i class="fas fa-check-circle"></i> Focus on deployment-ready privacy-preserving solutions</li>
-                  </ul>
+            <div class="column is-6">
+              <div class="hero-card">
+                <img src="static/images/overview.png" alt="Project overview illustration">
+                <div class="hero-card-content">
+                  <h3>Four coordinated awards</h3>
+                  <p>Aligned research across four institutions to deliver deployable privacy-preserving ITS data infrastructure.</p>
                 </div>
               </div>
             </div>
@@ -228,220 +73,224 @@
       </div>
     </section>
 
-    <section class="section overview-section">
-      <div class="container is-max-desktop">
-        <div class="columns is-vcentered">
-          <div class="column is-7 reveal">
-            <h2 class="title is-3">Program overview</h2>
+    <section class="section" id="overview">
+      <div class="container is-widescreen">
+        <div class="columns is-variable is-6">
+          <div class="column is-7">
+            <h2 class="section-title">Project overview</h2>
             <p class="lead">
-              PDaSP supports practical approaches for privately sharing and analyzing data across a range of use cases. The program emphasizes real-world deployment, collaboration with industry and government partners, and measurable impact in domains such as healthcare, transportation, agriculture, and cybersecurity.
+              Modern ITS generate large-scale, heterogeneous, and highly sensitive data from vehicles, infrastructure, and V2X communications. While these data are critical for improving safety, mobility, and sustainability, privacy concerns and regulatory constraints significantly limit their sharing and use.
             </p>
-            <div class="focus-grid">
-              <div class="focus-card">
-                <div class="focus-icon"><i class="fas fa-shield-alt"></i></div>
-                <h4>Privacy-enhancing technologies</h4>
-                <p>Advance secure computation, differential privacy, and related methods.</p>
-              </div>
-              <div class="focus-card">
-                <div class="focus-icon"><i class="fas fa-handshake"></i></div>
-                <h4>Collaborative data sharing</h4>
-                <p>Enable cross-sector partnerships with trusted data workflows.</p>
-              </div>
-              <div class="focus-card">
-                <div class="focus-icon"><i class="fas fa-rocket"></i></div>
-                <h4>Deployment and impact</h4>
-                <p>Translate research into solutions that work in practice.</p>
-              </div>
-            </div>
+            <p>
+              This project addresses these challenges by developing holistic, privacy-preserving methods and systems that balance data utility, strong privacy guarantees, system efficiency, and policy compliance.
+            </p>
           </div>
-          <div class="column is-5 reveal delay-1">
-            <div class="stat-grid">
-              <div class="stat-card">
-                <div class="stat-value">10</div>
-                <div class="stat-label">Teams funded</div>
-              </div>
-              <div class="stat-card">
-                <div class="stat-value">3</div>
-                <div class="stat-label">Program tracks</div>
-              </div>
-              <div class="stat-card">
-                <div class="stat-value">$10.4M</div>
-                <div class="stat-label">NSF investment</div>
-              </div>
-              <div class="stat-card">
-                <div class="stat-value">4+</div>
-                <div class="stat-label">Application domains</div>
-              </div>
-            </div>
-            <div class="stat-note">
-              Domains include healthcare, transportation, agriculture, and cybersecurity.
+          <div class="column is-5">
+            <div class="info-card">
+              <h3>Project snapshot</h3>
+              <ul>
+                <li><strong>Scope:</strong> Multi-institution ITS privacy collaboration</li>
+                <li><strong>Focus:</strong> Privacy-preserving data sharing and analytics</li>
+                <li><strong>Systems:</strong> Scalable, deployable cyberinfrastructure</li>
+                <li><strong>Impact:</strong> Responsible use of sensitive transportation data</li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section announcement-section">
-      <div class="container is-max-desktop">
-        <div class="announcement-card reveal">
-          <div class="columns is-vcentered">
-            <div class="column is-3 has-text-centered">
-              <img src="static/images/nsf-logo.gif" alt="National Science Foundation logo" class="announcement-logo">
-            </div>
-            <div class="column is-9">
-              <p class="announcement-kicker">NSF announcement</p>
-              <h3 class="announcement-title">NSF invests over $10M to advance U.S. leadership in privacy-enhancing technologies</h3>
-              <p class="announcement-text">
-                The National Science Foundation announced a $10.4M investment to support inaugural PDaSP awards. Funding supports 10 multidisciplinary teams building practical privacy-preserving data sharing and analytics solutions, emphasizing real-world deployment, collaboration, and community test beds.
-              </p>
-              <a href="https://www.nsf.gov/tip/updates/nsf-invests-over-10m-advance-us-leadership-privacy-enhancing" target="_blank" rel="noopener" class="button is-normal is-rounded is-dark">
-                <span class="icon"><i class="fas fa-arrow-right"></i></span>
-                <span>Read the NSF announcement</span>
-              </a>
+    <section class="section" id="description">
+      <div class="container is-widescreen">
+        <div class="section-header">
+          <h2 class="section-title">Project description</h2>
+          <p class="section-subtitle">Holistic privacy protection for real-world ITS deployments.</p>
+        </div>
+        <div class="content">
+          <p>
+            The project integrates privacy-preserving data sharing, secure computation, and federated analytics into ITS workflows. It emphasizes robust privacy guarantees while preserving data utility, system efficiency, and compliance with regulatory and policy constraints.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="research">
+      <div class="container is-widescreen">
+        <div class="section-header">
+          <h2 class="section-title">Research areas</h2>
+          <p class="section-subtitle">Five coordinated thrusts guide the research agenda.</p>
+        </div>
+        <div class="cards-grid">
+          <div class="area-card">
+            <h3>Privacy-preserving data sharing</h3>
+            <p>Differential privacy, secure computation, and federated learning techniques.</p>
+          </div>
+          <div class="area-card">
+            <h3>Transportation and ITS applications</h3>
+            <p>Traffic modeling, mobility behavior, and connected vehicle analytics.</p>
+          </div>
+          <div class="area-card">
+            <h3>Systems and cyberinfrastructure</h3>
+            <p>Scalable platforms, real-time processing, and trusted execution.</p>
+          </div>
+          <div class="area-card">
+            <h3>Policy, auditability, and trust</h3>
+            <p>Privacy auditing, regulatory compliance, and interpretability.</p>
+          </div>
+          <div class="area-card">
+            <h3>Deployment and evaluation</h3>
+            <p>Real-world datasets, testbeds, and performance validation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="team">
+      <div class="container is-widescreen">
+        <div class="columns is-variable is-6">
+          <div class="column is-6">
+            <h2 class="section-title">Team</h2>
+            <p>
+              The project team spans four institutions and includes experts in privacy and security, transportation and intelligent transportation systems, systems and cyber-physical systems, and education and workforce development.
+            </p>
+          </div>
+          <div class="column is-6">
+            <div class="stacked-cards">
+              <div class="info-card">
+                <h3>Institutional leads</h3>
+                <ul>
+                  <li><strong>University of Washington:</strong> Xuegang Ban (PI), Angela Kitali (Co-PI)</li>
+                  <li><strong>University of Connecticut:</strong> Yuan Hong (PI), Song Han (Co-PI)</li>
+                  <li><strong>Illinois Institute of Technology:</strong> Binghui Wang (PI)</li>
+                  <li><strong>Iowa State University:</strong> Meisam Mohammady (PI)</li>
+                </ul>
+              </div>
+              <div class="info-card">
+                <h3>NSF award</h3>
+                <p>
+                  <a href="https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2452750" target="_blank" rel="noopener">
+                    Award ID 2452750 — PDaSP Track 2: A Holistic Privacy Preserving Collaborative Data Sharing System for Intelligent Transportation
+                  </a>
+                </p>
+              </div>
+              <div class="info-card">
+                <h3>Expertise areas</h3>
+                <ul>
+                  <li>Privacy and Security</li>
+                  <li>Transportation and Intelligent Transportation Systems</li>
+                  <li>Systems and Cyber-Physical Systems</li>
+                  <li>Education and Workforce Development</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section tracks-section" id="projects">
-      <div class="container is-max-desktop">
-        <h2 class="title is-3 has-text-centered reveal">Projects by track</h2>
-        <p class="has-text-centered section-intro reveal delay-1">
-          PDaSP projects span three tracks focused on foundational technologies, integrated solutions, and testbeds for trustworthy data sharing.
-        </p>
-        <div class="track-rows">
-          <article class="track-row reveal delay-1">
-            <div class="track-row-header">
-              <span class="track-label">Track 1</span>
-              <h3>Advancing key technologies to enable practical PPDSA solutions</h3>
-              <p>Foundational capabilities that power trustworthy privacy-preserving systems.</p>
-            </div>
-            <div class="track-row-items">
-              <a class="track-chip" href="https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2452708" target="_blank" rel="noopener">
-                <span class="track-chip-title">Enabling a Privacy-Preserving Data Life Cycle with Lightweight Secure Computation</span>
-                <span class="track-chip-meta">Henry Corrigan-Gibbs and Emma Dauterman, MIT</span>
-              </a>
-              <a class="track-chip" href="https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2453149" target="_blank" rel="noopener">
-                <span class="track-chip-title">Practical Secure Multiparty Computations for Graph-based Intrusion Detection Systems</span>
-                <span class="track-chip-meta">Yupeng Zhang and Li Zhou, UIUC & UC Irvine</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="track-row reveal delay-2">
-            <div class="track-row-header">
-              <span class="track-label">Track 2</span>
-              <h3>Integrated and comprehensive solutions for trustworthy data sharing in application settings</h3>
-              <p>End-to-end systems that enable collaboration across organizations.</p>
-            </div>
-            <div class="track-row-items">
-              <a class="track-chip" href="https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2452750" target="_blank" rel="noopener">
-                <span class="track-chip-title">Holistic Privacy Preserving Collaborative Data Sharing for Intelligent Transportation</span>
-                <span class="track-chip-meta">Xuegang Ban, Angela Kitali, Yuan Hong, Song Han and collaborators</span>
-              </a>
-              <a class="track-chip" href="https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2452612" target="_blank" rel="noopener">
-                <span class="track-chip-title">Confidential Genome Imputation and Analytics (CoGIA)</span>
-                <span class="track-chip-meta">Hyunghoon Cho, Suleyman Sahinalp, Fan Zhang, Yale</span>
-              </a>
-              <a class="track-chip" href="https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2452835" target="_blank" rel="noopener">
-                <span class="track-chip-title">Explainable Auditing of ML Models for Privacy Violations</span>
-                <span class="track-chip-meta">Bradley Malin, Netanel Raviv, Yevgeniy Vorobeychik and partners</span>
-              </a>
-              <a class="track-chip" href="https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2452779" target="_blank" rel="noopener">
-                <span class="track-chip-title">TIDES - Trusted Integration Data Exchange System</span>
-                <span class="track-chip-meta">Sebastian Angel, Andreas Haeberlen, Brett Falk and team</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="track-row reveal delay-3">
-            <div class="track-row-header">
-              <span class="track-label">Track 3</span>
-              <h3>Usable tools and testbeds for trustworthy sharing of private or confidential data</h3>
-              <p>Operational testbeds and tools that make privacy-preserving practice real.</p>
-            </div>
-            <div class="track-row-items">
-              <a class="track-chip" href="https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2453035" target="_blank" rel="noopener">
-                <span class="track-chip-title">Privacy-Preserving Dairy-Digitalization with Federated Learning</span>
-                <span class="track-chip-meta">Miel Hostens and Joao Dorea, Cornell</span>
-              </a>
-              <a class="track-chip" href="https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2452819" target="_blank" rel="noopener">
-                <span class="track-chip-title">Testbed for Enhancing Privacy and Robustness of Federated Learning Systems</span>
-                <span class="track-chip-meta">Fatima Anwar, Muhammad Ali Gulzar, Ali Anwar and partners</span>
-              </a>
-              <a class="track-chip" href="https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2453009" target="_blank" rel="noopener">
-                <span class="track-chip-title">Rigorous and Performant Differentially Private Machine Learning via OpenDP</span>
-                <span class="track-chip-meta">Salil Vadhan and Flavio Calmon, Harvard</span>
-              </a>
-              <a class="track-chip" href="https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2453092" target="_blank" rel="noopener">
-                <span class="track-chip-title">TEPPIT: Testbed for Privacy-PreservIng Technologies for Data Sharing and Analysis</span>
-                <span class="track-chip-meta">Jelena Mirkovic, John Heidemann, Jose-Luis Ambite, USC</span>
-              </a>
-            </div>
-          </article>
+    <section class="section" id="partners">
+      <div class="container is-widescreen">
+        <div class="section-header">
+          <h2 class="section-title">Collaborations and partners</h2>
+        </div>
+        <div class="content">
+          <p>
+            The project collaborates with federal and public agencies including FHWA and USDOT, as well as state and city transportation agencies, university transportation centers, and industry and data partners. Additional partnerships are actively being developed.
+          </p>
         </div>
       </div>
     </section>
 
-    <section class="section sponsor-section">
-      <div class="container is-max-desktop">
-        <h2 class="title is-3 has-text-centered reveal">Sponsors</h2>
-        <div class="sponsor-grid reveal delay-1">
-          <a class="sponsor-card" href="https://www.nsf.gov" target="_blank" rel="noopener">
-            <img src="static/images/nsf-logo.gif" alt="National Science Foundation logo">
-            <span>U.S. National Science Foundation</span>
-          </a>
-          <a class="sponsor-card" href="https://www.transportation.gov" target="_blank" rel="noopener">
-            <img src="static/images/dot-logo.gif" alt="U.S. Department of Transportation logo">
-            <span>U.S. Department of Transportation</span>
-          </a>
-          <a class="sponsor-card" href="https://www.intel.com" target="_blank" rel="noopener">
-            <img src="static/images/intel-logo.png" alt="Intel logo">
-            <span>Intel</span>
-          </a>
-          <a class="sponsor-card" href="https://www.nist.gov" target="_blank" rel="noopener">
-            <img src="static/images/nist-logo.png" alt="National Institute of Standards and Technology logo">
-            <span>National Institute of Standards and Technology</span>
-          </a>
-          <a class="sponsor-card" href="https://www.broadcom.com/" target="_blank" rel="noopener">
-            <img src="static/images/broadcom-logo.png" alt="Broadcom logo">
-            <span>Broadcom Inc.</span>
-          </a>
+    <section class="section" id="deliverables">
+      <div class="container is-widescreen">
+        <div class="section-header">
+          <h2 class="section-title">Delivered products</h2>
+        </div>
+        <div class="cards-grid deliverables-grid">
+          <div class="area-card">
+            <h3>Privacy-preserving software platforms</h3>
+            <p>Foundational infrastructure for secure ITS data exchange.</p>
+          </div>
+          <div class="area-card">
+            <h3>Algorithms and methods</h3>
+            <p>Secure analytics tailored to transportation applications.</p>
+          </div>
+          <div class="area-card">
+            <h3>Benchmark datasets</h3>
+            <p>Evaluation frameworks and real-world performance baselines.</p>
+          </div>
+          <div class="area-card">
+            <h3>Privacy auditing tools</h3>
+            <p>Compliance tooling and transparency metrics.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section cta-band">
-      <div class="container is-max-desktop">
-        <div class="cta-card reveal">
-          <div>
-            <h3>Participate in PDaSP</h3>
-            <p>Access shared resources, program materials, and collaboration assets.</p>
+    <section class="section" id="outcomes">
+      <div class="container is-widescreen">
+        <div class="columns is-variable is-6">
+          <div class="column is-7">
+            <h2 class="section-title">Future research outcomes</h2>
+            <p>
+              The project will produce new privacy technologies for ITS, deployable systems for agencies, policy-relevant insights on data sharing and privacy, and a trained workforce prepared to advance trustworthy transportation systems.
+            </p>
           </div>
-          <div class="cta-actions">
-            <a href="https://drive.google.com/drive/folders/1LTrapPCJs9iQRBbmBKKRq04I-1N4uqJJ?usp=drive_link" target="_blank" rel="noopener" class="button is-normal is-rounded is-outline">
-              <span class="icon"><i class="fas fa-folder-open"></i></span>
-              <span>Open Participant Portal</span>
-            </a>
+          <div class="column is-5">
+            <div class="info-card">
+              <h3>What success looks like</h3>
+              <ul>
+                <li>Deployable systems for transportation agencies</li>
+                <li>Policy-relevant insights on data sharing</li>
+                <li>Trustworthy privacy technologies for ITS</li>
+                <li>Workforce prepared for privacy-first mobility</li>
+              </ul>
+            </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <div class="container is-widescreen">
+        <div class="columns is-variable is-6">
+          <div class="column is-7">
+            <h2 class="section-title">Education and outreach</h2>
+            <p>
+              The project supports graduate and undergraduate research training, integrates results into university curricula, engages minority-serving institutions, and conducts outreach to K–12 students and the broader public.
+            </p>
+          </div>
+          <div class="column is-5">
+            <div class="info-card">
+              <h3>Education commitments</h3>
+              <ul>
+                <li>Graduate and undergraduate research training</li>
+                <li>Curriculum integration at partner universities</li>
+                <li>Engagement with minority-serving institutions</li>
+                <li>K–12 and public outreach programs</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="funding">
+      <div class="container is-widescreen">
+        <div class="info-banner">
+          <h2>Funding and acknowledgment</h2>
+          <p>
+            This work is supported by multiple National Science Foundation awards across four institutions. Any opinions, findings, and conclusions expressed are those of the authors and do not necessarily reflect the views of the NSF.
+          </p>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container">
-      <div class="columns is-centered">
-        <div class="column is-8">
-          <div class="content">
-            <p>
-              This page is a redesign of the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank" rel="noopener">Academic Project Page Template</a>.
-              Content summarized from <a href="https://pdasp.net/" target="_blank" rel="noopener">pdasp.net</a> and related NSF award listings.
-              This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
-            </p>
-          </div>
-        </div>
+    <div class="container is-widescreen">
+      <div class="content has-text-centered">
+        <p>NSF/FHWA PDaSP ITS Privacy Project — Track 2</p>
       </div>
     </div>
   </footer>
